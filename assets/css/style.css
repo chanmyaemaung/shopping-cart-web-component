@@ -16,6 +16,7 @@ body {
   margin-right: auto;
   padding: 0 20px;
 }
+
 .products-for-sale {
   display: flex;
   justify-content: space-between;
@@ -24,14 +25,17 @@ body {
   padding-bottom: 25px;
   border-bottom: 1px solid rgb(128, 128, 128, 0.2);
 }
+
 product-element button {
   width: 100%;
   padding: 15px 32px;
 }
+
 .image-container {
   max-height: 300px;
   width: auto;
 }
+
 .product-image {
   object-fit: cover;
   height: 300px;
@@ -44,8 +48,9 @@ table {
 table td {
   width: 33%;
 }
+
 button {
-  background-color: #4caf50; /* Green */
+  background-color: hsl(73, 86%, 46%);
   border: none;
   color: white;
   text-align: center;
@@ -56,9 +61,11 @@ button {
   text-transform: uppercase;
   font-weight: bold;
 }
+
 button:hover {
-  background-color: rgba(76, 175, 80, 0.85);
+  background-color: hsl(73, 86%, 50%);
 }
+
 .cart-footer {
   border-top: 1px solid gray;
   margin-top: 15px;
