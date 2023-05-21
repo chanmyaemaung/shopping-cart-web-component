@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart - Web Component</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart - Web Component</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>CL Shopping Cart</h1>
-        <div class="products-for-sale">
-            <product-element name="Fresh Apple Fruits" id="1" price="5" image="./assets/img/fresh-apple.jpeg"></product-element>
-            <product-element name="Fresh Rambutan Fruits" id="2" price="10" image="./assets/img/fresh-rambutan.jpeg"></product-element>
-            <product-element name="Fresh Orange Fruits" id="3" price="20" image="./assets/img/fresh-orange.jpeg"></product-element>
-            <product-element name="Fresh Dragon Fruits" id="4" price="25" image="./assets/img/fresh-dragon.jpeg"></product-element>
-        </div>
-        <cart-items></cart-items>
+  <div class="container">
+    <h1>CL Shopping Cart</h1>
+    <div class="products-for-sale">
+      <ul>
+        <li>
+          <product-element name="Fresh Apple Fruits" id="1" price="5" image="./assets/img/fresh-apple.jpeg" alt="Image of Fresh Apple Fruits"></product-element>
+        </li>
+        <li>
+          <product-element name="Fresh Rambutan Fruits" id="2" price="10" image="./assets/img/fresh-rambutan.jpeg" alt="Image of Fresh Rambutan Fruits"></product-element>
+        </li>
+        <li>
+          <product-element name="Fresh Orange Fruits" id="3" price="20" image="./assets/img/fresh-orange.jpeg" alt="Image of Fresh Orange Fruits"></product-element>
+        </li>
+        <li>
+          <product-element name="Fresh Dragon Fruits" id="4" price="25" image="./assets/img/fresh-dragon.jpeg" alt="Image of Fresh Dragon Fruits"></product-element>
+        </li>
+      </ul>
     </div>
-    
-    <script type="module" src="./assets/js/index.js"></script>
+    <cart-items aria-label="Shopping Cart Items"></cart-items>
+
+    <div class="authorCredit">
+      <p>Crafted by <a href="#" target="_blank">Chen Lay</a>
+    </div>
+  </div>
+  
+  <script type="module" src="./assets/js/index.js"></script>
 </body>
 </html>
