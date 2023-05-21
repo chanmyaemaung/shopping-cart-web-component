@@ -1,4 +1,5 @@
 import ProductElement from "./product.js";
+import CartItems from "./cart-items.js";
 
 // Global Cart Object
 window.cart = {
@@ -6,3 +7,4 @@ window.cart = {
 }
 
 customElements.define("product-element", ProductElement);
+customElements.define("cart-items", CartItems)

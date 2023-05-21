@@ -2,6 +2,8 @@ class ProductElement extends HTMLElement {
   constructor() {
     super();
 
+    this.cartItems = document.querySelector("cart-items");
+
     this.image = this.getAttribute("image");
     this.name = this.getAttribute("name");
     this.id = this.getAttribute("id");
@@ -36,8 +38,9 @@ class ProductElement extends HTMLElement {
 
     // If item is already in cart, increase quantity
     item_in_cart ? item_in_cart.quantity++ : window.cart.items.push(itemObj);
-
-    console.log(window.cart.items);
+    
+    // Render cart items
+    this.cartItems.render();
   }
 }
 
